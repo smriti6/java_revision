@@ -37,8 +37,11 @@ public class Stringbas {
 
 
         //print ASCII value of character;
-        int c='a';
-        System.out.println(c);
+        // int c='a';
+        // System.out.println(c);
         
+
+        //print current time
+        System.out.format("Current Date & Time : %tc%n\n",System.currentTimeMillis());
     }
 }
