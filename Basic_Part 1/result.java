@@ -77,15 +77,24 @@ public class result {
 
         //comput sum of digit of integer Eg. int n1=123; ans=1+2+3=6;
 
-        System.out.println("Add integer");
-        System.out.println("Enter integer ");
-        int input1 =sc.nextInt();
-        int ans=0;
-        while(input1!=0){
-            ans+=input1%10;
-            input1/=10;
+        // System.out.println("Add integer");
+        // System.out.println("Enter integer ");
+        // int input1 =sc.nextInt();
+        // int ans=0;
+        // while(input1!=0){
+        //     ans+=input1%10;
+        //     input1/=10;
+        // }
+        // System.out.println(ans);
+
+
+        //Print odd numbers from 1 to 100
+
+        for(int i=0;i<=100;i++){
+            if(i%2!=0){
+                System.out.print(i+" ");
+            }
         }
-        System.out.println(ans);
 
 
 
