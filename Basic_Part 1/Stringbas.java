@@ -42,6 +42,12 @@ public class Stringbas {
         
 
         //print current time
-        System.out.format("Current Date & Time : %tc%n\n",System.currentTimeMillis());
+        //System.out.format("Current Date & Time : %tc%n\n",System.currentTimeMillis());
+
+        //convert string to int
+
+        String a="34";
+        int an=Integer.parseInt(a);
+        System.out.println(an);
     }
 }
