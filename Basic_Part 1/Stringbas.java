@@ -46,8 +46,9 @@ public class Stringbas {
 
         //convert string to int
 
-        String a="34";
-        int an=Integer.parseInt(a);
-        System.out.println(an);
+        // String a="34";
+        // int an=Integer.parseInt(a);
+        // System.out.println(an);
+        
     }
 }
