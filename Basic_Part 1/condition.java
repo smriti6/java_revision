@@ -45,20 +45,35 @@ public class condition {
         // }
         // System.out.println("Sum is : "+ans);
 
-        System.out.println("Sum of all in given ranga");
-        int input1=sc.nextInt();
-        int input2=sc.nextInt();
-        int ans=0;
-        for(int i=input1;i<=input2;i++){
-            ans+=i;
+        // System.out.println("Sum of all in given ranga");
+        // int input1=sc.nextInt();
+        // int input2=sc.nextInt();
+        // int ans=0;
+        // for(int i=input1;i<=input2;i++){
+        //     ans+=i;
+        // }
+        // System.out.println("Sum is : "+ans);
+
+        // //method 2
+        // int num1=12;
+        // int num2=15;
+        // int s=num2*(num2+1)/2 - num1*(num1+1)/2 + num1;
+        // System.out.println(s);
+
+        System.out.println("Greatest of two number");
+        int n1=12,n2=9;
+        if(n1>n2){
+            System.out.println(n1+" is greater");
         }
-        System.out.println("Sum is : "+ans);
+        else{
+            System.out.println(n2+" is greatest ");
+        }
 
         //method 2
-        int num1=12;
-        int num2=15;
-        int s=num2*(num2+1)/2 - num1*(num1+1)/2 + num1;
-        System.out.println(s);
+        int t=n1>n2?n1:n2;
+        System.out.println(t+" is greatest");
 
+        //method 3
+        System.out.println(Math.max(n1, n2)+" is greatest ");
     }
 }
