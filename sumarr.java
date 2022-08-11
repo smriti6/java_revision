@@ -8,5 +8,13 @@ public class sumarr {
             a+=arr[i];
         }
         System.out.println(a);
+
+        int f=3;
+        for(int i=0;i<n;i++){
+            if(f==arr[i]){
+                System.out.println("found at "+i);
+            }
+            
+        }
     }
 }
