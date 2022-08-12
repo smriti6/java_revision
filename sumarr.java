@@ -14,7 +14,8 @@ public class sumarr {
             if(f==arr[i]){
                 System.out.println("found at "+i);
             }
-            
         }
+
+        
     }
 }
