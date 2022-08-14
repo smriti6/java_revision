@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class array {
@@ -50,21 +51,34 @@ public class array {
 
         //find a missing number in array;
 
-        int arr[]=new int [4];
-        System.out.println("Enter number in array");
-        for(int i=0;i<4;i++){
-            arr[i]=sc.nextInt();
-        }
-        int n=arr.length;
-        System.out.println();
-        System.out.println("Length of array : "+n);
-        // int t=((n+1)*(n+2))/2;
-        int sum = ((n + 1) * (n + 2)) / 2;
-        System.out.println("\n\n total sum of array "+sum);
-        for(int i=0;i<n;i++){
-            sum-=arr[i];
-        }
-        System.out.println("Missing number : "+sum);
+        // int arr[]=new int [4];
+        // System.out.println("Enter number in array");
+        // for(int i=0;i<4;i++){
+        //     arr[i]=sc.nextInt();
+        // }
+        // int n=arr.length;
+        // System.out.println();
+        // System.out.println("Length of array : "+n);
+        // // int t=((n+1)*(n+2))/2;
+        // int sum = ((n + 1) * (n + 2)) / 2;
+        // System.out.println("\n\n total sum of array "+sum);
+        // for(int i=0;i<n;i++){
+        //     sum-=arr[i];
+        // }
+        // System.out.println("Missing number : "+sum);
+
+       // Kth smallest element
+       int arr[]={7,10,4,3,20,15};
+       int n=arr.length;
+       int k=3;
+       System.out.println("Array length is : "+n);
+       Arrays.sort(arr);
+       if(k==1){
+        System.out.println(k+" smallest element is "+arr[0]);
+       }
+       else {
+        System.out.println(k+" smallest element is "+arr[k-1]);
+       }
 
     }
 }
