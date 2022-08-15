@@ -67,18 +67,24 @@ public class array {
         // }
         // System.out.println("Missing number : "+sum);
 
-       // Kth smallest element
-       int arr[]={7,10,4,3,20,15};
-       int n=arr.length;
-       int k=3;
-       System.out.println("Array length is : "+n);
-       Arrays.sort(arr);
-       if(k==1){
-        System.out.println(k+" smallest element is "+arr[0]);
-       }
-       else {
-        System.out.println(k+" smallest element is "+arr[k-1]);
-       }
+    //    // Kth smallest element
+    //    int arr[]={7,10,4,3,20,15};
+    //    int n=arr.length;
+    //    int k=3;
+    //    System.out.println("Array length is : "+n);
+    //    Arrays.sort(arr);
+    //    if(k==1){
+    //     System.out.println(k+" smallest element is "+arr[0]);
+    //    }
+    //    else {
+    //     System.out.println(k+" smallest element is "+arr[k-1]);
+    //    }
 
+
+    // find largest element in array
+    int arr[]={4,5,7,1,2,3,9};
+    Arrays.sort(arr);
+    System.out.println("Largest element in array is : "+arr[arr.length-1]);
+    System.out.println("Smallest element in array is : "+arr[0]);
     }
 }
