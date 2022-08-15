@@ -82,9 +82,18 @@ public class array {
 
 
     // find largest element in array
-    int arr[]={4,5,7,1,2,3,9};
+    // int arr[]={4,5,7,1,2,3,9};
+    // Arrays.sort(arr);
+    // System.out.println("Largest element in array is : "+arr[arr.length-1]);
+    // System.out.println("Smallest element in array is : "+arr[0]);
+
+    //find a repeting element in array
+    int arr[]={1,3,4,5,2,4};
     Arrays.sort(arr);
-    System.out.println("Largest element in array is : "+arr[arr.length-1]);
-    System.out.println("Smallest element in array is : "+arr[0]);
+    for(int i=0;i<arr.length-2;i++){
+        if(arr[i]==arr[i+1]){
+            System.out.println("Fount repating element : "+arr[i]);
+        }
+    }
     }
 }
