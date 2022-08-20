@@ -99,9 +99,24 @@ public class array {
 
     //find 2nd smallest number in array
 
-    int arr[]={12,33,2,7,9,4};
-    Arrays.sort(arr);
-    System.out.println("Second smallest element in array is : "+arr[1]);
+    // int arr[]={12,33,2,7,9,4};
+    // Arrays.sort(arr);
+    // System.out.println("Second smallest element in array is : "+arr[1]);
+
+
+    //reverse a array
+    int arr[]={1,2,3,4,5,6};
+    int t=0;
+    int tem[]=new int[arr.length];
+    for(int i=arr.length-1;i>=0;i--){
+        tem[t]=arr[i];
+        t++;
+    }
+    for(int i=0;i<tem.length;i++){
+        System.out.println(tem[i]);
+    }
+
+    
 
     }
 }
