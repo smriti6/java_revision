@@ -105,7 +105,7 @@ public class array {
 
 
     //reverse a array
-    int arr[]={1,2,3,4,5,6};
+    //int arr[]={1,2,3,4,5,6};
     // int t=0;
     // int tem[]=new int[arr.length];
     // for(int i=arr.length-1;i>=0;i--){
@@ -120,15 +120,36 @@ public class array {
 
     //method 2 reverse array
 
-    int start=0,end=arr.length-1;
-    while(start<end){
-        int t=arr[start];
-        arr[start]=arr[end];
-        arr[end]=t;
-        start++;
-        end--;
+    // int start=0,end=arr.length-1;
+    // while(start<end){
+    //     int t=arr[start];
+    //     arr[start]=arr[end];
+    //     arr[end]=t;
+    //     start++;
+    //     end--;
+    // }
+    // for(int i=0;i<arr.length;i++){
+    //     System.out.println(arr[i]);
+    // }
+
+    //sort array
+    int arr[]={4,7,2,9,1};
+    int n=arr.length;
+    int t=0;
+    boolean sort=false;
+    while(!sort) {
+        sort=true;
+        for(int i=0;i<n-1;i++){
+            if(arr[i]>arr[i+1]){
+                t=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=t;
+                sort=false;
+            }
+        }
     }
-    for(int i=0;i<arr.length;i++){
+    
+    for(int i=0;i<n;i++){
         System.out.println(arr[i]);
     }
 
