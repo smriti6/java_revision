@@ -153,7 +153,5 @@ public class array {
         System.out.println(arr[i]);
     }
 
-    
-
     }
 }
